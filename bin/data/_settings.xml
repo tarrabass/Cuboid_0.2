@@ -5,7 +5,7 @@
     </Toggle_usecamera>
     <Toggle_doShader>
         <name>doShader</name>
-        <value>0</value>
+        <value>1</value>
     </Toggle_doShader>
     <SliderFloat_shaderPerlinFrequency>
         <name>shaderPerlinFrequency</name>
@@ -13,11 +13,11 @@
     </SliderFloat_shaderPerlinFrequency>
     <SliderFloat_shaderPerlinScale>
         <name>shaderPerlinScale</name>
-        <value>1.700000048</value>
+        <value>3.099999905</value>
     </SliderFloat_shaderPerlinScale>
     <SliderFloat_fog_intensity>
         <name>fog_intensity</name>
-        <value>0.016500002</value>
+        <value>0.043000001</value>
     </SliderFloat_fog_intensity>
     <Toggle___light>
         <name> _light</name>
@@ -37,7 +37,7 @@
     </Toggle__planFace>
     <Toggle__planWireFrame>
         <name>_planWireFrame</name>
-        <value>0</value>
+        <value>1</value>
     </Toggle__planWireFrame>
     <Slider2D_PlanePosition>
         <name>PlanePosition</name>
