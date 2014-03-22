@@ -1,0 +1,1359 @@
+<peoples>
+	<people>
+	<id>1</id>
+	<name>Francois-moncarey</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>2</id>
+	<name>compagny-creole</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>3</id>
+	<name>maurice</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>4</id>
+	<name>denver</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>5</id>
+	<name>yann</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>6</id>
+	<name>joe-dassin</name>
+	<place></place>
+	<friends>
+			<friend>4</friend>
+			<friend>3</friend>
+			<friend>2</friend>
+			<friend>1</friend>
+			<friend>5</friend>
+</friends>
+</people>
+	<people>
+	<id>7</id>
+	<name>riki-martin</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>8</id>
+	<name>benoit-zebra</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>9</id>
+	<name>kako</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>10</id>
+	<name>Tiben</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>11</id>
+	<name>jacky</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>12</id>
+	<name>benzeb</name>
+	<place></place>
+	<friends>
+			<friend>1</friend>
+</friends>
+</people>
+	<people>
+	<id>13</id>
+	<name>nina</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>14</id>
+	<name>clara</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>15</id>
+	<name>mamqn-a-dupin</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>16</id>
+	<name>lilou</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>17</id>
+	<name>agathe</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>18</id>
+	<name>segent</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>19</id>
+	<name>alex</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>20</id>
+	<name>charles</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>21</id>
+	<name>emilie</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>22</id>
+	<name>antoine</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>23</id>
+	<name>julien</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>24</id>
+	<name>charles</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>25</id>
+	<name>jules</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>26</id>
+	<name>jacky</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>27</id>
+	<name>JK</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>28</id>
+	<name>maylis-maylis</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>29</id>
+	<name>kiki</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>30</id>
+	<name>benoit-ddsc</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>31</id>
+	<name>tarrabass</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>32</id>
+	<name>isabelle</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>33</id>
+	<name>Katarine</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>34</id>
+	<name>alain</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>35</id>
+	<name>sandrine</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>36</id>
+	<name>pauline</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>37</id>
+	<name>karine</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>38</id>
+	<name>cicile</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>39</id>
+	<name>Gagoun</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>40</id>
+	<name>mariema</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>41</id>
+	<name>Agnes</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>42</id>
+	<name>alain-b</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>43</id>
+	<name>robert</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>44</id>
+	<name>justine-manon</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>45</id>
+	<name>christel</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>46</id>
+	<name>denis</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>47</id>
+	<name>jeanne-robinson</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>48</id>
+	<name>valerie-chine</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>49</id>
+	<name>stalin</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>50</id>
+	<name>romain</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>51</id>
+	<name>saperlipopettr</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>52</id>
+	<name>maxwell</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>53</id>
+	<name>dani-cabrera</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>54</id>
+	<name>sandrine</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>55</id>
+	<name>sandrine</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>56</id>
+	<name>aurelie</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>57</id>
+	<name>andrea</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>58</id>
+	<name>teresoide</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>59</id>
+	<name>garavito</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>60</id>
+	<name>n-Nestor</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>61</id>
+	<name>enny-eniola-ninio</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>63</id>
+	<name>je-passe-a-l-ecran</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>66</id>
+	<name>chaosangel</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>67</id>
+	<name>teresoide</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>68</id>
+	<name>PSYCHO-PAT</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>72</id>
+	<name>Itaka-733</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>73</id>
+	<name>gazman</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>74</id>
+	<name>mortier-cvm-2013</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>75</id>
+	<name>8</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>76</id>
+	<name>Le-CVM-vs-Maxwell</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>78</id>
+	<name>YO-SOY-ESPECIAL</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>79</id>
+	<name>CHAOSANGEL</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>81</id>
+	<name>polla-berza</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>82</id>
+	<name>I-will-miss-you</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>84</id>
+	<name>master-mortier</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>86</id>
+	<name>ERIC</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>87</id>
+	<name>cheb-ruben</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>88</id>
+	<name>TEKNIK-ERIK</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>89</id>
+	<name>I-will-miss-you</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>90</id>
+	<name>GAELTIVI</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>92</id>
+	<name>LES-LILLOIS-SONT-LES-ROIS</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>93</id>
+	<name>le-vengeur-masque</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>94</id>
+	<name>bravo-bande-de-tarre</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>96</id>
+	<name>ondes-et-lumiere</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>98</id>
+	<name>charline</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>99</id>
+	<name>pierrette</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>100</id>
+	<name>marquois</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>101</id>
+	<name>boisson</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>102</id>
+	<name>couloup</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>104</id>
+	<name>a-nne</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>105</id>
+	<name>marina</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>109</id>
+	<name>Laure</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>110</id>
+	<name>lola</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>111</id>
+	<name>emma-vidallet</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>112</id>
+	<name>alexandre-vidallet</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>113</id>
+	<name>Faustine2013</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>114</id>
+	<name>lisa-lisa</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>115</id>
+	<name>lisa-2o13</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>141</id>
+	<name>Ghislaine</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>142</id>
+	<name>lagache</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>143</id>
+	<name>marro</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>144</id>
+	<name>melinadavid</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>145</id>
+	<name>goyheneche</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>146</id>
+	<name>Emile</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>147</id>
+	<name>Alice</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>148</id>
+	<name>archimede</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>150</id>
+	<name>Christiane</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>151</id>
+	<name>chrystelle</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>152</id>
+	<name>francoise</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>153</id>
+	<name>julie</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>154</id>
+	<name>Vincent-Vincent</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>157</id>
+	<name>francois-moncarey</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>158</id>
+	<name>rita-rita</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>159</id>
+	<name>guillaume</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>166</id>
+	<name>yolande</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>167</id>
+	<name>ben</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>168</id>
+	<name>alain-ma-rieur-lucas</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>169</id>
+	<name>Lea-3</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>170</id>
+	<name>Sandrine</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>171</id>
+	<name>Christian</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>172</id>
+	<name>les-texier-3</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>173</id>
+	<name>les-rennais</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>174</id>
+	<name>anouk</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>175</id>
+	<name>nina</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>176</id>
+	<name>zoe</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>177</id>
+	<name>Langlade48</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>178</id>
+	<name>na-Natacha-Dhooge</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>179</id>
+	<name>Tounet</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>180</id>
+	<name>m-m-Mimi-Cracra</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>181</id>
+	<name>Papy-m-Papy-Momo</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>182</id>
+	<name>La-Gate</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>183</id>
+	<name>Denis</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>184</id>
+	<name>Leo</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>185</id>
+	<name>arthur</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>186</id>
+	<name>eric-et-janique</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>187</id>
+	<name>renee</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>188</id>
+	<name>nath-mric-vivi</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>189</id>
+	<name>navaro</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>190</id>
+	<name>Quentin-Navaro-Auburtin</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>191</id>
+	<name>Sylvie-et-Julie</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>192</id>
+	<name>vero-et-serge-83</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>194</id>
+	<name>christophe</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>196</id>
+	<name>Mickael</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>197</id>
+	<name>monique</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>198</id>
+	<name>depuydt-didier</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>199</id>
+	<name>Princesse-59</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>200</id>
+	<name>maryline-et-pascal</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>201</id>
+	<name>diana</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>202</id>
+	<name>tatiana</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>203</id>
+	<name>alexander-bouvery</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>204</id>
+	<name>daniel-bankas</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>205</id>
+	<name>pascal-m-c-bouvery</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>206</id>
+	<name>YAMINOU-PESSAC</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>208</id>
+	<name>jeanine-guyon</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>209</id>
+	<name>dominique-petit</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>210</id>
+	<name>Loic-Malice</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>211</id>
+	<name>Olivier-Malice</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>220</id>
+	<name>James-Bond</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>222</id>
+	<name>Calamity-Jane</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>223</id>
+	<name>caroline-vivant</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>224</id>
+	<name>diane</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>225</id>
+	<name>elise</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>227</id>
+	<name>brigitte-massenet</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>228</id>
+	<name>philippe-caillieret</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>229</id>
+	<name>Mathilde</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>230</id>
+	<name>yves</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>231</id>
+	<name>monique</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>232</id>
+	<name>Fabienne</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>233</id>
+	<name>David</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>234</id>
+	<name>Monique</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>235</id>
+	<name>Yves</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>236</id>
+	<name>leticia</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>237</id>
+	<name>loloa</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>238</id>
+	<name>delphine</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>239</id>
+	<name>idaya</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>240</id>
+	<name>patrick</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>241</id>
+	<name>nicole</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>245</id>
+	<name>Karukera</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>246</id>
+	<name>Amman-Jordanie</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>247</id>
+	<name>Olivier-mi-amor</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>248</id>
+	<name>noe</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>249</id>
+	<name>cecile</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>250</id>
+	<name>sidonie</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>251</id>
+	<name>emmanuel</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>252</id>
+	<name>valchris</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>253</id>
+	<name>barthes-p-l</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>254</id>
+	<name>matheo-rousset</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>257</id>
+	<name>jacotin</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>258</id>
+	<name>kirsten</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>261</id>
+	<name>kadem</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>262</id>
+	<name>henrimas-caterina</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>263</id>
+	<name>stephane-Pablo</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+	<people>
+	<id>264</id>
+	<name>Lasteste</name>
+	<place></place>
+	<friends>
+</friends>
+</people>
+</peoples>

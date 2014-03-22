@@ -1,0 +1,30 @@
+<controls>
+    <SliderFloat_density>
+        <name>density</name>
+        <value>0.202500001</value>
+    </SliderFloat_density>
+    <SliderFloat_fog_start>
+        <name>fog_start</name>
+        <value>43.350002289</value>
+    </SliderFloat_fog_start>
+    <SliderFloat_fog_end>
+        <name>fog_end</name>
+        <value>144.074996948</value>
+    </SliderFloat_fog_end>
+    <SliderFloat_r>
+        <name>r</name>
+        <value>1.000000000</value>
+    </SliderFloat_r>
+    <SliderFloat_g>
+        <name>g</name>
+        <value>1.000000000</value>
+    </SliderFloat_g>
+    <SliderFloat_b>
+        <name>b</name>
+        <value>1.000000000</value>
+    </SliderFloat_b>
+    <SliderFloat_fogFilter>
+        <name>fogFilter</name>
+        <value>1.809999943</value>
+    </SliderFloat_fogFilter>
+</controls>
