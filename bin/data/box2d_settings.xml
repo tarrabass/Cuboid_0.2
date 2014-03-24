@@ -1,10 +1,10 @@
 <controls>
     <SliderInt_box2d_Gravity>
         <name>box2d_Gravity</name>
-        <value>-2</value>
+        <value>20</value>
     </SliderInt_box2d_Gravity>
     <SliderInt_box2d_Wind>
         <name>box2d_Wind</name>
-        <value>0</value>
+        <value>2</value>
     </SliderInt_box2d_Wind>
 </controls>

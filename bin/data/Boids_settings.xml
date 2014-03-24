@@ -1,11 +1,11 @@
 <controls>
     <SliderInt_addNbBoids>
         <name>addNbBoids</name>
-        <value>100</value>
+        <value>85</value>
     </SliderInt_addNbBoids>
     <SliderInt_nbBoidsTotal>
         <name>nbBoidsTotal</name>
-        <value>193</value>
+        <value>427</value>
     </SliderInt_nbBoidsTotal>
     <SliderInt_modeLink>
         <name>modeLink</name>
@@ -17,7 +17,7 @@
     </Button_addSomeFish>
     <SliderFloat_radius>
         <name>radius</name>
-        <value>3.379999876</value>
+        <value>2.637500048</value>
     </SliderFloat_radius>
     <Button__clearBoids>
         <name>_clearBoids</name>
@@ -25,23 +25,31 @@
     </Button__clearBoids>
     <SliderInt_nbBoids>
         <name>nbBoids</name>
-        <value>1176</value>
+        <value>1172</value>
     </SliderInt_nbBoids>
     <SliderFloat_scaleUp>
         <name>scaleUp</name>
-        <value>0.990000010</value>
+        <value>0.409000009</value>
     </SliderFloat_scaleUp>
+    <Toggle__renderName>
+        <name>_renderName</name>
+        <value>1</value>
+    </Toggle__renderName>
+    <Toggle__renderParticle>
+        <name>_renderParticle</name>
+        <value>0</value>
+    </Toggle__renderParticle>
     <Toggle_renderLink>
         <name>renderLink</name>
         <value>0</value>
     </Toggle_renderLink>
     <SliderFloat_distanceMini>
         <name>distanceMini</name>
-        <value>9.991000175</value>
+        <value>125.875000000</value>
     </SliderFloat_distanceMini>
     <SliderFloat_maxSpeed>
         <name>maxSpeed</name>
-        <value>8.850114822</value>
+        <value>0.001000000</value>
     </SliderFloat_maxSpeed>
     <Toggle__flockEffect>
         <name>_flockEffect</name>
@@ -49,7 +57,7 @@
     </Toggle__flockEffect>
     <Toggle__patrolPolyLine>
         <name>_patrolPolyLine</name>
-        <value>1</value>
+        <value>0</value>
     </Toggle__patrolPolyLine>
     <Toggle__gotoPolyLine>
         <name>_gotoPolyLine</name>
@@ -61,11 +69,11 @@
     </ComboBox_typeForm>
     <SliderFloat_rayonSphere>
         <name>rayonSphere</name>
-        <value>180.910003662</value>
+        <value>1815.395019531</value>
     </SliderFloat_rayonSphere>
     <SliderInt_nbSlice>
         <name>nbSlice</name>
-        <value>28</value>
+        <value>29</value>
     </SliderInt_nbSlice>
     <Toggle__vectorField>
         <name>_vectorField</name>
@@ -81,11 +89,11 @@
     </SliderFloat_VortexOffcetX>
     <SliderFloat_VortexOffcetY>
         <name>VortexOffcetY</name>
-        <value>0.000000000</value>
+        <value>4.000000000</value>
     </SliderFloat_VortexOffcetY>
     <SliderFloat_VortexOffcetZ>
         <name>VortexOffcetZ</name>
-        <value>0.000000000</value>
+        <value>-0.999992371</value>
     </SliderFloat_VortexOffcetZ>
     <Toggle__addCentripedeForce>
         <name>_addCentripedeForce</name>
@@ -97,35 +105,31 @@
     </Toggle__seek>
     <SliderFloat_perpendicularForce>
         <name>perpendicularForce</name>
-        <value>1.996000051</value>
+        <value>0.000000000</value>
     </SliderFloat_perpendicularForce>
     <SliderFloat_centerForce>
         <name>centerForce</name>
-        <value>0.629999995</value>
+        <value>0.000000000</value>
     </SliderFloat_centerForce>
-    <Toggle__renderName>
-        <name>_renderName</name>
-        <value>0</value>
-    </Toggle__renderName>
     <Toggle_randomPatrol>
         <name>randomPatrol</name>
         <value>0</value>
     </Toggle_randomPatrol>
     <Toggle__perlin>
         <name>_perlin</name>
-        <value>1</value>
+        <value>0</value>
     </Toggle__perlin>
     <SliderFloat_PerlinDiv>
         <name>PerlinDiv</name>
-        <value>340.000671387</value>
+        <value>45.000957489</value>
     </SliderFloat_PerlinDiv>
     <SliderFloat_coeffPerlin>
         <name>coeffPerlin</name>
-        <value>4.554999828</value>
+        <value>0.594999969</value>
     </SliderFloat_coeffPerlin>
     <SliderFloat_scaledVol>
         <name>scaledVol</name>
-        <value>10.000000000</value>
+        <value>1.085565090</value>
     </SliderFloat_scaledVol>
     <SliderFloat_coeffSound>
         <name>coeffSound</name>

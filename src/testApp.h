@@ -13,6 +13,8 @@
 #include "ofxXmlSettings.h"
 #include "ofxSyphon.h"
 #include "CustomParticle.h"
+//#include "ofxPostProcessing.h"
+#include "ofxAssimpModelLoader.h"
 
 
 
@@ -23,6 +25,26 @@
 
 
 class testApp : public ofBaseApp{
+    
+    
+    struct Box {
+        ofVec3f pos;
+        float size;
+        float angle;
+        float axis_x;
+        float axis_y;
+        float axis_z;
+        
+        Box(ofVec3f pos=ofVec3f(0.0f, 0.0f, 0.0f), float angle=0.0f, float ax=0.0f, float ay=0.0f, float az=0.0f, float size=2.0f) :
+        pos(pos),
+        size(size),
+        angle(angle),
+        axis_x(ax),
+        axis_y(ay),
+        axis_z(az)
+        {}
+    };
+
 	public:
 		void setup();
 		void update();
@@ -41,7 +63,8 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		int idSqlToReelId(vector<int> tab,int idSql);
-
+        void createRandomBoxes();
+        void geometryPass();
 	
 	
 	int idSqlToReel[3000];
@@ -57,6 +80,7 @@ class testApp : public ofBaseApp{
 		bool _patrolPolyLine;
 	
 		bool _flockEffect;
+    
 	bool _clearBoids;
 	bool _renderName;
 		bool randomPatrol;
@@ -129,7 +153,10 @@ class testApp : public ofBaseApp{
     
     
     // light //
-    ofLight						light;
+    ofLight						light1;
+        ofLight						light2;
+        ofLight						light3;
+        ofLight						light4;
     
     /// camera ///
 	bool usecamera;
@@ -159,6 +186,8 @@ class testApp : public ofBaseApp{
 	float camera4y;
 	float camera4z;
 	ofTrueTypeFont myFont;
+  
+
 	int nbBoidsTotal;
 	bool _seek;
 	ofPolyline targetPolyLine;
@@ -173,6 +202,7 @@ class testApp : public ofBaseApp{
 	ofPolyline getSpiral();
 	float rayonSphere;
 	int nbSlice;
+
 	
 	
 	///------------Box2D-------------///
@@ -196,8 +226,9 @@ class testApp : public ofBaseApp{
     ofVec3f planPosition;
     bool _light;
     bool _drawParticle;
-    
-    
+    //this is our model we'll draw
+	ofxAssimpModelLoader model;
+    	void drawWithMesh();
     /// shader ///
 	ofShader myShader;
 	bool doShader;
@@ -206,6 +237,10 @@ class testApp : public ofBaseApp{
 	
 	float fog_intensity;
     
+    
+ /// 3d stuff ///
+
+   
    };
 
 

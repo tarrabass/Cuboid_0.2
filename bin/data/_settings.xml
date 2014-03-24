@@ -9,20 +9,20 @@
     </Toggle_doShader>
     <SliderFloat_shaderPerlinFrequency>
         <name>shaderPerlinFrequency</name>
-        <value>260.739990234</value>
+        <value>860.140014648</value>
     </SliderFloat_shaderPerlinFrequency>
     <SliderFloat_shaderPerlinScale>
         <name>shaderPerlinScale</name>
-        <value>3.099999905</value>
+        <value>0.000000000</value>
     </SliderFloat_shaderPerlinScale>
     <SliderFloat_fog_intensity>
         <name>fog_intensity</name>
-        <value>0.043000001</value>
+        <value>0.000936000</value>
     </SliderFloat_fog_intensity>
-    <Toggle___light>
-        <name> _light</name>
-        <value>1</value>
-    </Toggle___light>
+    <Toggle__light>
+        <name>_light</name>
+        <value>0</value>
+    </Toggle__light>
     <Toggle__drawParticle>
         <name>_drawParticle</name>
         <value>1</value>
@@ -42,11 +42,11 @@
     <Slider2D_PlanePosition>
         <name>PlanePosition</name>
         <valueX>0.000000000</valueX>
-        <valueY>-15.619999886</valueY>
+        <valueY>-140.625000000</valueY>
     </Slider2D_PlanePosition>
     <SliderFloat_timer>
         <name>timer</name>
-        <value>4085.183105469</value>
+        <value>2925.414794922</value>
     </SliderFloat_timer>
     <SliderFloat_camera_FOV>
         <name>camera FOV</name>
@@ -62,6 +62,6 @@
     </Toggle__drawVideo>
     <SliderInt_limit>
         <name>limit</name>
-        <value>217</value>
+        <value>95</value>
     </SliderInt_limit>
 </controls>

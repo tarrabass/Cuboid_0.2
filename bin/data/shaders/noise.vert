@@ -9,6 +9,7 @@ uniform float shaderPerlinScale = 1.0;
 uniform mat4 projectionMatrix;
 uniform mat4 viewMatrix;
 uniform mat4 modelMatrix;
+    uniform sampler2D tex1;
 
 
 
@@ -145,7 +146,7 @@ vec4 rand(vec2 A,vec2 B,vec2 C,vec2 D){
 
 void main(){
 
-
+	gl_TexCoord[0] = gl_MultiTexCoord0;
     vec3 vVertex = vec3(gl_ModelViewMatrix * gl_Vertex);
     // Transform vertex to view-space
     const float LOG2 = 1.442695;
@@ -179,11 +180,13 @@ void main(){
 	
 	//finally set the pos to be that actual position rendered
 	gl_Position = pos;
+   /// gl_Position = gl_Vertex *gl_ProjectionMatrix  * gl_ModelViewMatrix;
 
-
-fogFactor = 1.0 - fogFactor;
+    fogFactor = 1.0 - fogFactor;
  
-	
-	gl_FrontColor =  gl_Color * vec4(fogFactor,fogFactor,fogFactor,fogFactor);
+	//gl_FrontColor = texture2D(tex1, vec2(gl_TexCoord));
+    
+	 gl_FrontColor =  gl_Color * vec4(fogFactor,fogFactor,fogFactor,fogFactor);
+
 }
 

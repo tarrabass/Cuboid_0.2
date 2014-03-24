@@ -1,22 +1,58 @@
 #include "testApp.h"
 
 
+
 //--------------------------------------------------------------
 void testApp::setup(){
-	ofSetFrameRate(120);
+	ofSetFrameRate(60);
 	//ofSetLogLevel(OF_LOG_NOTICE);
 	ofSetVerticalSync(true);
-ofSetDrawBitmapMode(OF_BITMAPMODE_MODEL);
+    ofSetDrawBitmapMode(OF_BITMAPMODE_MODEL);
 	//glEnable(GL_DEPTH_TEST);
+    
+    
+    //// 3d model ////
+    //we need to call this for textures to work on models
+    ofDisableArbTex();
+	
+	//this makes sure that the back of the model doesn't show through the front
+	ofEnableDepthTest();
+    //model.loadModel("dog/dog.3ds");
+	//model.setPosition(200,200, 500);
+    
+    
+    // Setup post-processing chain
+    /*
+    post.init(ofGetWidth(), ofGetHeight());
+       post.createPass<SSAOPass>()->setEnabled(false);
+    post.createPass<FxaaPass>()->setEnabled(false);
+    post.createPass<BloomPass>()->setEnabled(false);
+ 
+    post.createPass<KaleidoscopePass>()->setEnabled(false);
+    post.createPass<BleachBypassPass>()->setEnabled(false);
+    post.createPass<ToonPass>()->setEnabled(false);
+    post.createPass<DofAltPass>()->setEnabled(false);
+    post.createPass<FakeSSSPass>()->setEnabled(false);
+    post.createPass<LimbDarkeningPass>()->setEnabled(false);
+     */
 
-	myFont.loadFont("Futura.ttc",20, true, true,false, 0.3, 200);
-mainOutputSyphonServer.setName("Screen Output");
+ 
+	///myFont.loadFont("Impact.ttc",20, true,true,true, 0.3, 200);
+    //myFont.loadFont("Impact.ttc",20, false,false,true, 0.3, 200);
+    myFont.loadFont("Impact.ttc",10,true,true,true,0.1,300);
+    
+    mainOutputSyphonServer.setName("Screen Output");
 	ofEnableSmoothing();
 	//timer = 5000;
 	xMax = 768.0;
 	yMax = 1024.0;
 	zMax = -1990;	
-    myShader.load("shaders/noise.vert", "shaders/noise.frag");
+    myShader.load("shaders/noise.vert", "shaders/noise.frag"); 
+    
+    
+
+    
+    
     ofEnableDepthTest();
 	counter2 = 0;
 	
@@ -27,23 +63,26 @@ mainOutputSyphonServer.setName("Screen Output");
 	titleArray[2] = "Vortex";
     titleArray[3] = "Spiral";
     
-    plane.set(1000,1000);   ///dimensions for width and height in pixels
+    plane.set(2000,2000);   ///dimensions for width and height in pixels
     plane.setPosition(0, 0, 0); /// position in x y z
-    plane.setResolution(100,100);
+    plane.setResolution(50,50);
     plane.rotate(90, 1.0, 0.0, 0.0);
 
 	gui.addToggle("usecamera", usecamera);
     gui.addToggle("doShader",doShader);
 
+
     gui.addSlider("shaderPerlinFrequency",shaderPerlinFrequency,1.0, 1000.0);
 	gui.addSlider("shaderPerlinScale",shaderPerlinScale,0.0, 10.0);
-    gui.addSlider("fog_intensity",fog_intensity, 0.0, 0.1);
-    gui.addToggle(" _light", _light);
+    gui.addSlider("fog_intensity",fog_intensity, 0.0, 0.003);
+    gui.addToggle("_light", _light);
     gui.addToggle("_drawParticle", _drawParticle);
 
     gui.addToggle("_activeBox2d",_activeBox2d);
     gui.addToggle("_planFace",_planFace);
     gui.addToggle("_planWireFrame",_planWireFrame);
+
+    
     gui.addSlider2d("PlanePosition", planPosition, -500, 500, -500,500);
 	gui.addSlider("timer",timer,  1,5000);//1
 	gui.addSlider("camera FOV",fov,0.0, 100.0);
@@ -75,7 +114,8 @@ mainOutputSyphonServer.setName("Screen Output");
 	gui.addButton("_clearBoids",_clearBoids);
 	gui.addSlider("nbBoids",nbBoids,1,2048);
 	gui.addSlider("scaleUp",scaleUp,0,1);
-	
+    	gui.addToggle("_renderName",myBoids._renderName);
+	gui.addToggle("_renderParticle",myBoids._renderParticle);
 	gui.addToggle("renderLink",myBoids.renderLink);
 	gui.addSlider("distanceMini",myBoids.distanceMini, 1,1000);//1
 	gui.addSlider("maxSpeed",myBoids.maxSpeed,  0.001,10);//1
@@ -83,15 +123,10 @@ mainOutputSyphonServer.setName("Screen Output");
 	gui.addToggle("_patrolPolyLine",_patrolPolyLine);
 	gui.addToggle("_gotoPolyLine", _gotoPolyLine);
 	gui.addComboBox("typeForm",typeForm,3,titleArray);
-	gui.addSlider("rayonSphere",rayonSphere,1,2000);//4,
+	gui.addSlider("rayonSphere",rayonSphere,1,3000);//4,
 	gui.addSlider("nbSlice",nbSlice,1,100);//4,
-    
-    
-    
-    
-    
-	gui.addToggle("_vectorField",_vectorField);
-	
+
+	gui.addToggle("_vectorField",_vectorField);	
 	
 	gui.addToggle("_dephtAlpha", _dephtAlpha);
 	gui.addSlider("VortexOffcetX",VortexOffcetX,-2000,2000);//4,
@@ -104,7 +139,7 @@ mainOutputSyphonServer.setName("Screen Output");
     
 	gui.addSlider("perpendicularForce",perpendicularForce,0,2);
 	gui.addSlider("centerForce",centerForce,0,1);
-	gui.addToggle("_renderName",myBoids._renderName);
+
 	
 	gui.addToggle("randomPatrol",randomPatrol);
 	gui.addToggle("_perlin",_perlin);
@@ -232,22 +267,30 @@ mainOutputSyphonServer.setName("Screen Output");
 	edgeLine.setPhysics(0.0, 0.5, 0.5);
 	edgeLine.create(box2d.getWorld());
     planPosition.x = 0;
-    planPosition.y = -15.62;
+
 	
+     light1.setPosition(0,0,0);
+     light2.setPosition(0,0,0);
+     light3.setPosition(0,0,0);
+     light4.setPosition(0,0,0);
     
+    light1.setParent(camera1);
+    light2.setParent(camera2);
+    light3.setParent(camera3);
+    light4.setParent(camera4);
+
     
     //// fog setup ////
     ofDisableArbTex();
     
-    ofEnableLighting();
+   // ofEnableLighting();
     
   	camera1.setFov(fov);
 	camera2.setFov(fov);
 	camera3.setFov(fov);
 	camera4.setFov(fov);
+    
 
-
-	
 }
 
 //--------------------------------------------------------------
@@ -264,11 +307,11 @@ int testApp::idSqlToReelId(vector<int> tab,int idSql){
 
 void testApp::update(){
     
+
     
-   
     plane.setPosition(planPosition.x, planPosition.y, 0);
     
-        light.setPosition(camera1.getPosition().x, camera1.getPosition().y-14, camera1.getPosition().z);
+    
 
     
 	if(_activeBox2d){
@@ -277,10 +320,6 @@ void testApp::update(){
 	}
 
 	myBoids.rayonCircle = rayonCircle;
-
-
-	
-
 	 
 	temps++;
 	posSphere.x = 500 * cos(temps/15);
@@ -300,7 +339,7 @@ void testApp::update(){
 		ofSoundUpdate();
 
 	    myMovie.update();
-			scaledVol = ofMap(smoothedVol, 0.0, 0.01, 0.0, 10.0, true);
+			scaledVol = ofMap(smoothedVol, 0.0001, 0.01, 0.0001, 10.0, true);
 	
 	tempTimer++;
 
@@ -309,7 +348,7 @@ void testApp::update(){
 	
 	if(_getXml){
 	
-		//ofSaveURLAsync("http://www.cenc.ch/plexus/get_xml_people.php","peoples.xml"); 
+		ofSaveURLAsync("http://chelmy.no-ip.org/peoples_xml.php","peoples.xml");
 		if(XML.loadFile("peoples.xml")){
 		//if(XML.loadFile("http://www.cenc.ch/plexus/get_xml_people.php")){
 			XML.pushTag("peoples");
@@ -326,7 +365,10 @@ void testApp::update(){
 				XML.pushTag("people",i);
 				
 				string tempName;
+            
+            
 				tempName = XML.getValue("name", "defaultNameXML");
+          cout<<"tempName"<<tempName<<"\n";
 				idSqlToReel[ofToInt(XML.getValue("id", "defaultNameXML"))] = i;
 				XML.pushTag("friends",0);
 				int nbFriends = XML.getNumTags("friend");
@@ -441,6 +483,8 @@ switch (typeForm) {
 		} 
 		
 			myBoids.update();
+    
+    
 	nbBoidsTotal = myBoids.boids.size();
 		
 		/*
@@ -491,49 +535,40 @@ switch (typeForm) {
 
 void testApp::renderScene(ofVec3f camPos){
 
+    
+ 
 	ofSetColor(255, 255, 255,255);
+   
+    if(_drawParticle){
+        myBoids.render(&myFont);
+    }
+    
 
-	//ofBox(0, 0, 0, 800,800,800);
-	///ofSphere(posSphere,100);
     if(_planFace){
         plane.draw();
     }
+    
+    ///drawWithMesh();
+
     if(_planWireFrame){
         
-  //  plane.drawWireframe();
+
        	glLineWidth(2);
           plane.drawWireframe();
-        ofNoFill();
-        
-      //  ofBox(0, 0, 0, 400,400,400);
-        //ofDrawSphere(0,0,0,200);
-        ofFill();
-    	
-    }
-    ofNoFill();
-    
-   // ofBox(0, 0, 0, 400,400,400);
-    //ofDrawSphere(0,0,0,200);
-    ofFill();
- 
-    if(_drawParticle){
-	myBoids.render(&myFont);
-    }
 
+    }
  
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
  
-  
-	
-    ///ofEnableDepthTest();
+
 	
 	ofBackground(0, 0, 0, 255);
     
     
-    ofEnableLighting();
+
     
     glClearDepth(1.0);
     glEnable(GL_DEPTH_TEST);                       // Enables Depth Testing
@@ -547,14 +582,21 @@ void testApp::draw(){
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     
     
+
+    
+    
     if (_light) {
         
         ofEnableLighting();
-        light.enable();
+        light1.enable();
+          light2.enable();
+          light3.enable();
+          light4.enable();
     }
     
-    
-      
+  
+   
+    ofEnableArbTex();
     
     if(doShader) {
         myShader.begin();
@@ -564,20 +606,22 @@ void testApp::draw(){
         myShader.setUniform1f("timeValY", -ofGetElapsedTimef() * 0.18 );
         myShader.setUniform1f("shaderPerlinFrequency",shaderPerlinFrequency);
         myShader.setUniform1f("shaderPerlinScale",shaderPerlinScale);
-		 myShader.setUniform1f("fog_intensity",fog_intensity);
+        myShader.setUniform1f("fog_intensity",fog_intensity);
+        myShader.setUniformTexture("tex",myFont.getFontTexture(),1);
        
+        
         //we also pass in the mouse position
         //we have to transform the coords to what the shader is expecting which is 0,0 in the center and y axis flipped.
         myShader.setUniform2f("mouse", mouseX - ofGetWidth()/2, ofGetHeight()/2-mouseY );
         
         
     }
-	glPushAttrib(GL_ENABLE_BIT);
+
     
-    // setup gl state
-    glEnable(GL_DEPTH_TEST);
-    glEnable(GL_CULL_FACE);
-	 
+   
+    
+	glPushAttrib(GL_ENABLE_BIT);
+
 
 	
 	camera1.begin(viewport1);
@@ -596,36 +640,49 @@ void testApp::draw(){
 	renderScene(camera1.getPosition());
 	camera4.end();
 
-       glPopAttrib();
-      if(doShader) myShader.end(); 
-	if (_activeBox2d) {
-		for(int i=0; i<particles.size(); i++) {
-			particles[i].get()->draw(); 
-		}
-	}
+      
     
 
-  
+    
+     glPopAttrib();
+ 
+
+    if(doShader)
+    {
+        myShader.end();
+       
+    }
+    
+    
+	if (_activeBox2d) {
+		for(int i=0; i<particles.size(); i++) {
+			particles[i].get()->draw();
+		}
+	}
     if (_light) {
-        light.disable();
+        light1.disable();
+          light2.disable();
+          light3.disable();
+          light4.disable();
         ofDisableLighting();
     }
     
     
-    
-    ofDisableLighting();
+    // setup gl state
     glDisable(GL_DEPTH_TEST);
-    
-    
+    glDisable(GL_CULL_FACE);
+
+
 	mainOutputSyphonServer.publishScreen();
 	///drawing.draw();
 	gui.draw();
     // draw help
-    ofSetColor(0, 255, 255);
-    ofDrawBitmapString("Number keys toggle effects, mouse rotates scene", 250, 300);
+
 
 
 }
+
+
 
 void testApp::getXml()
 
@@ -671,8 +728,8 @@ ofPolyline testApp::getVortex(){
 		float tempY;
 		float tempZ;
 		tempY = 350-(ii*(768/180))+VortexOffcetY;
-		tempX = (((768-tempY) * scaleUp)+rayonSphere ) * cos(ii) + VortexOffcetX;
-		tempZ = (((768-tempY) * scaleUp)+rayonSphere ) * sin(ii) + VortexOffcetZ;
+		tempX = (((768-tempY) * scaleUp)+rayonSphere/10 ) * cos(ii) + VortexOffcetX;
+		tempZ = (((768-tempY) * scaleUp)+rayonSphere/10 ) * sin(ii) + VortexOffcetZ;
 		
 	tempPolyLIne.addVertex(ofVec3f(tempX,tempY,tempZ));
 	}
@@ -771,9 +828,10 @@ void testApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
-	
-
-	
+	/*
+    unsigned idx = key - '0';
+    if (idx < post.size()) post[idx]->setEnabled(!post[idx]->getEnabled());
+	*/
 switch (key) {
 		
 	case OF_KEY_DOWN: gui.prevPage(); break;
@@ -870,3 +928,51 @@ void testApp::audioIn(float * input, int bufferSize, int nChannels){
 	smoothedVol += 0.07 * curVol;
 	bufferCounter++;	
 }
+
+
+//draw the model manually
+void testApp::drawWithMesh(){
+    
+	//get the model attributes we need
+	ofVec3f scale = model.getScale();
+	ofVec3f position = model.getPosition();
+	float normalizedScale = model.getNormalizedScale();
+	ofVboMesh mesh = model.getMesh(0);
+	ofTexture texture = model.getTextureForMesh(0);
+	ofMaterial material = model.getMaterialForMesh(0);
+	
+    ofPushMatrix();
+	
+	//translate and scale based on the positioning.
+	ofTranslate(position);
+	//ofRotate(-ofGetMouseX(), 0, 1, 0);
+	//ofRotate(90,1,0,0);
+    
+	
+	ofScale(normalizedScale, normalizedScale, normalizedScale);
+	ofScale(scale.x,scale.y,scale.z);
+	
+	//modify mesh with some noise
+	float liquidness = 5;
+	float amplitude = mouseY/100.0;
+	float speedDampen = 5;
+    /*
+	vector<ofVec3f>& verts = mesh.getVertices();
+	for(unsigned int i = 0; i < verts.size(); i++){
+		verts[i].x += ofSignedNoise(verts[i].x/liquidness, verts[i].y/liquidness,verts[i].z/liquidness, ofGetElapsedTimef()/speedDampen)*amplitude;
+		verts[i].y += ofSignedNoise(verts[i].z/liquidness, verts[i].x/liquidness,verts[i].y/liquidness, ofGetElapsedTimef()/speedDampen)*amplitude;
+		verts[i].z += ofSignedNoise(verts[i].y/liquidness, verts[i].z/liquidness,verts[i].x/liquidness, ofGetElapsedTimef()/speedDampen)*amplitude;
+	}*/
+    
+	//draw the model manually
+	texture.bind();
+	material.begin();
+	//mesh.drawWireframe(); //you can draw wireframe too
+	mesh.drawFaces();
+	material.end();
+	texture.unbind();
+	
+	ofPopMatrix();
+    
+}
+
