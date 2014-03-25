@@ -29,7 +29,7 @@
     </SliderInt_nbBoids>
     <SliderFloat_scaleUp>
         <name>scaleUp</name>
-        <value>0.409000009</value>
+        <value>0.314999998</value>
     </SliderFloat_scaleUp>
     <Toggle__renderName>
         <name>_renderName</name>
@@ -45,11 +45,11 @@
     </Toggle_renderLink>
     <SliderFloat_distanceMini>
         <name>distanceMini</name>
-        <value>125.875000000</value>
+        <value>715.284973145</value>
     </SliderFloat_distanceMini>
     <SliderFloat_maxSpeed>
         <name>maxSpeed</name>
-        <value>0.001000000</value>
+        <value>7.150284290</value>
     </SliderFloat_maxSpeed>
     <Toggle__flockEffect>
         <name>_flockEffect</name>
@@ -57,7 +57,7 @@
     </Toggle__flockEffect>
     <Toggle__patrolPolyLine>
         <name>_patrolPolyLine</name>
-        <value>0</value>
+        <value>1</value>
     </Toggle__patrolPolyLine>
     <Toggle__gotoPolyLine>
         <name>_gotoPolyLine</name>
@@ -69,11 +69,11 @@
     </ComboBox_typeForm>
     <SliderFloat_rayonSphere>
         <name>rayonSphere</name>
-        <value>1815.395019531</value>
+        <value>1410.530029297</value>
     </SliderFloat_rayonSphere>
     <SliderInt_nbSlice>
         <name>nbSlice</name>
-        <value>29</value>
+        <value>28</value>
     </SliderInt_nbSlice>
     <Toggle__vectorField>
         <name>_vectorField</name>
@@ -85,7 +85,7 @@
     </Toggle__dephtAlpha>
     <SliderFloat_VortexOffcetX>
         <name>VortexOffcetX</name>
-        <value>0.000000000</value>
+        <value>336.000000000</value>
     </SliderFloat_VortexOffcetX>
     <SliderFloat_VortexOffcetY>
         <name>VortexOffcetY</name>
@@ -93,11 +93,11 @@
     </SliderFloat_VortexOffcetY>
     <SliderFloat_VortexOffcetZ>
         <name>VortexOffcetZ</name>
-        <value>-0.999992371</value>
+        <value>-2.099992275</value>
     </SliderFloat_VortexOffcetZ>
     <Toggle__addCentripedeForce>
         <name>_addCentripedeForce</name>
-        <value>0</value>
+        <value>1</value>
     </Toggle__addCentripedeForce>
     <Toggle__seek>
         <name>_seek</name>
@@ -105,11 +105,11 @@
     </Toggle__seek>
     <SliderFloat_perpendicularForce>
         <name>perpendicularForce</name>
-        <value>0.000000000</value>
+        <value>1.580000043</value>
     </SliderFloat_perpendicularForce>
     <SliderFloat_centerForce>
         <name>centerForce</name>
-        <value>0.000000000</value>
+        <value>0.135000005</value>
     </SliderFloat_centerForce>
     <Toggle_randomPatrol>
         <name>randomPatrol</name>
@@ -121,7 +121,7 @@
     </Toggle__perlin>
     <SliderFloat_PerlinDiv>
         <name>PerlinDiv</name>
-        <value>45.000957489</value>
+        <value>140.000869751</value>
     </SliderFloat_PerlinDiv>
     <SliderFloat_coeffPerlin>
         <name>coeffPerlin</name>
@@ -129,7 +129,7 @@
     </SliderFloat_coeffPerlin>
     <SliderFloat_scaledVol>
         <name>scaledVol</name>
-        <value>1.085565090</value>
+        <value>1.127664566</value>
     </SliderFloat_scaledVol>
     <SliderFloat_coeffSound>
         <name>coeffSound</name>

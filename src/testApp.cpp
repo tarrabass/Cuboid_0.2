@@ -39,9 +39,10 @@ void testApp::setup(){
  
 	///myFont.loadFont("Impact.ttc",20, true,true,true, 0.3, 200);
     //myFont.loadFont("Impact.ttc",20, false,false,true, 0.3, 200);
-    myFont.loadFont("Impact.ttc",10,true,true,true,0.1,300);
+    myFont.loadFont("Impact.ttc",15,true,true,true,0.5,1000);
     
     mainOutputSyphonServer.setName("Screen Output");
+    	individualTextureSyphonServer.setName("Texture Output");
 	ofEnableSmoothing();
 	//timer = 5000;
 	xMax = 768.0;
@@ -50,7 +51,7 @@ void testApp::setup(){
     myShader.load("shaders/noise.vert", "shaders/noise.frag"); 
     
     
-
+    myFbo.allocate(3072,768,GL_RGBA32F);
     
     
     ofEnableDepthTest();
@@ -67,8 +68,9 @@ void testApp::setup(){
     plane.setPosition(0, 0, 0); /// position in x y z
     plane.setResolution(50,50);
     plane.rotate(90, 1.0, 0.0, 0.0);
-
-	gui.addToggle("usecamera", usecamera);
+    gui.addToggle("_useFbo",_useFbo);
+	gui.addToggle("_drawFBO",_drawFBO);
+    
     gui.addToggle("doShader",doShader);
 
 
@@ -158,7 +160,7 @@ void testApp::setup(){
 	
 	
 	gui.loadFromXML();
-	mainOutputSyphonServer.setName("faceBookVortex");
+
 
 	//addSomeFish(22);
 	///mode_links = 2;
@@ -307,13 +309,8 @@ int testApp::idSqlToReelId(vector<int> tab,int idSql){
 
 void testApp::update(){
     
-
-    
     plane.setPosition(planPosition.x, planPosition.y, 0);
-    
-    
 
-    
 	if(_activeBox2d){
 		box2d.setGravity(box2d_wind,box2d_gravity);
 		box2d.update();	
@@ -487,45 +484,7 @@ switch (typeForm) {
     
 	nbBoidsTotal = myBoids.boids.size();
 		
-		/*
-		if (mode_links==1) {
-			
-			
-			if(boids[i].friends.size()>0){
-			for(int iii=0;iii<boids[i].friends.size();iii++){
-				ofVec3f deb(boids[i].position.x,boids[i].position.y,boids[i].position.z);
-			
-			
-				ofVec3f fin(boids[idSqlToReel[boids[i].friends[iii]]].position.x,boids[idSqlToReel[boids[i].friends[iii]]].position.y,boids[idSqlToReel[boids[i].friends[iii]]].position.z);
-				addCylinder(deb,fin);
-			}
-			}
-			 
-		}
-		if (mode_links==3) {
-			for (int ii = i; ii < boids.size(); ii++){
-				/// on crer des lien en fonction de la distance 
-				
-				if (boids[i].position.distance(boids[ii].position) < distanceMini) {
-					ofVec3f deb(boids[i].position.x,boids[i].position.y,boids[i].position.z);
-					ofVec3f fin(boids[ii].position.x,boids[ii].position.y,boids[ii].position.z);
-					addCylinder(deb,fin);
-				}				
-			}
-			
-			if(boids[i].friends.size()>0){
-				for(int iii=0;iii<boids[i].friends.size();iii++){
-					ofVec3f deb(boids[i].position.x,boids[i].position.y,boids[i].position.z);
-					
-					
-					ofVec3f fin(boids[idSqlToReel[boids[i].friends[iii]]].position.x,boids[idSqlToReel[boids[i].friends[iii]]].position.y,boids[idSqlToReel[boids[i].friends[iii]]].position.z);
-					addCylinder(deb,fin);
-				}
-			}
-			
-		}
 
-	}*/
 	
 	float t = ofGetLastFrameTime();
 	
@@ -562,8 +521,9 @@ void testApp::renderScene(ofVec3f camPos){
 
 //--------------------------------------------------------------
 void testApp::draw(){
- 
-
+    if(_useFbo){
+    myFbo.begin();
+    }
 	
 	ofBackground(0, 0, 0, 255);
     
@@ -671,8 +631,17 @@ void testApp::draw(){
     // setup gl state
     glDisable(GL_DEPTH_TEST);
     glDisable(GL_CULL_FACE);
-
-
+    if (_useFbo) {
+        
+    
+    myFbo.end();
+    if(_drawFBO){
+        myFbo.draw(0,0);
+    }
+        }
+    
+     individualTextureSyphonServer.publishTexture(&myFbo.getTextureReference());
+    
 	mainOutputSyphonServer.publishScreen();
 	///drawing.draw();
 	gui.draw();

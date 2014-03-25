@@ -1,23 +1,27 @@
 <controls>
-    <Toggle_usecamera>
-        <name>usecamera</name>
-        <value>0</value>
-    </Toggle_usecamera>
+    <Toggle__useFbo>
+        <name>_useFbo</name>
+        <value>1</value>
+    </Toggle__useFbo>
+    <Toggle__drawFBO>
+        <name>_drawFBO</name>
+        <value>1</value>
+    </Toggle__drawFBO>
     <Toggle_doShader>
         <name>doShader</name>
         <value>1</value>
     </Toggle_doShader>
     <SliderFloat_shaderPerlinFrequency>
         <name>shaderPerlinFrequency</name>
-        <value>860.140014648</value>
+        <value>980.020019531</value>
     </SliderFloat_shaderPerlinFrequency>
     <SliderFloat_shaderPerlinScale>
         <name>shaderPerlinScale</name>
-        <value>0.000000000</value>
+        <value>7.900000095</value>
     </SliderFloat_shaderPerlinScale>
     <SliderFloat_fog_intensity>
         <name>fog_intensity</name>
-        <value>0.000936000</value>
+        <value>0.001245000</value>
     </SliderFloat_fog_intensity>
     <Toggle__light>
         <name>_light</name>
@@ -62,6 +66,6 @@
     </Toggle__drawVideo>
     <SliderInt_limit>
         <name>limit</name>
-        <value>95</value>
+        <value>96</value>
     </SliderInt_limit>
 </controls>

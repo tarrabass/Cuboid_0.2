@@ -69,6 +69,7 @@ class testApp : public ofBaseApp{
 	
 	int idSqlToReel[3000];
 	ofxSyphonServer mainOutputSyphonServer;
+    ofxSyphonServer individualTextureSyphonServer;
 	vector<ofVec3f> pathLine;
 		int nbBoids;
 	int addNbBoids;
@@ -239,6 +240,10 @@ class testApp : public ofBaseApp{
     
     
  /// 3d stuff ///
+   bool _useFbo;
+    ofFbo myFbo;
+    bool _drawFBO;
+    
 
    
    };
